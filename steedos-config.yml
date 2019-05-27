@@ -7,12 +7,13 @@ datasources:
       database: steedos
   mongo:
     connection: 
-      driver: postgres
-      url: postgresql://mmuser:mmuser_password@192.168.0.21:5432/mattermost
+      driver: mongo
+      host: 127.0.0.1
+      database: steedos
     objects: 
       - "./src"
     apps:
-      - "./src/mattermost.app.yml"
+      - "./src/contract.app.yml"
 cfs:
   store: "local"
   local: 
