@@ -1,0 +1,32 @@
+{
+  "name": "@steedos/plugin-mattermost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steedos/steedos-plugin-mattermost.git"
+  },
+  "author": "Jack Zhuang",
+  "license": "ISC",
+  "dependencies": {
+    "@steedos/meteor-bundle-runner": "^1.1.5",
+    "@steedos/objectql": "^0.0.10",
+    "steedos-server": "^1.2.2"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/steedos/steedos-plugin-mattermost/issues"
+  },
+  "homepage": "https://github.com/steedos/steedos-plugin-mattermost#readme",
+  "resolutions": {
+    "graphql": "^14.1.1",
+    "@steedos/objectql": "^0.0.10",
+    "@steedos/core": "^1.1.14",
+    "@steedos/auth": "^1.0.4"
+  }
+}
