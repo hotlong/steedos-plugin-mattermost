@@ -6,4 +6,5 @@ is_creator: true
 objects: 
   - mattermost.teams
   - mattermost.users
+  - mattermost.channels
   - mattermost.posts

@@ -1,36 +1,41 @@
-name: posts
-label: Posts
+name: channels
+label: Channels
 icon: orders
-enable_files: true
-enable_search: true
-enable_tasks: true
+enable_files: false
+enable_search: false
+enable_tasks: false
 enable_notes: false
 fields:
   id: 
     type: text
     primary: true
     hidden: true
-  message:
+  name:
     type: text
-    label: Message
-    is_name: true
-  type:
+    label: Name
+  displayname:
     type: text
-    label: Type
-  createat:
+    label: Display Name
+  header:
+    type: text
+    label: Header
+  purpose:
+    type: text
+    label: Purpose
+  totalmsgcount:
     type: number
-    label: Created At
-  channelid:
+    label: Total Msg Count
+  teamid:
     type: master_detail
-    reference_to: channels
-    label: Channel
+    reference_to: teams
+    label: Team
 list_views:
   all:
     label: All
     columns:
-      - message
-      - type
-      - createat
+      - name
+      - displayname
+      - totalmsgcount
     filter_scope: space
 permission_set:
   user:
