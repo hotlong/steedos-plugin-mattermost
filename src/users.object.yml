@@ -1,28 +1,45 @@
 name: users
-label: 账户
+label: Users
 icon: macros
 fields:
   id: 
     type: text
     primary: true
+    hidden: true
   username:
     type: text
-    label: 用户名
+    label: Username
+    is_name: true
   nickname:
     type: text
-    label: 昵称
+    label: Nick Name
   firstname:
     type: text
-    label: 姓氏
+    label: First Name
   lastname:
     type: text
-    label: 名称
+    label: Last Name
   email:
     type: text
-    label: 邮件
+    label: Email
+  emailverified:
+    type: boolean
+    label: Email Verified
+  position:
+    type: text
+    label: Position
+  roles:
+    type: text
+    label: Roles
+  locale:
+    type: text
+    label: Locale
+  timezone:
+    type: text
+    label: Timezone
 list_views:
   all:
-    label: 全部
+    label: All
     columns:
       - username
       - nickname

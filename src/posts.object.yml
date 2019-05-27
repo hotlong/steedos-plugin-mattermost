@@ -1,5 +1,5 @@
 name: posts
-label: 消息
+label: Posts
 icon: orders
 enable_files: true
 enable_search: true
@@ -9,18 +9,20 @@ fields:
   id: 
     type: text
     primary: true
+    hidden: true
   message:
     type: text
-    label: 内容
+    label: Message
+    is_name: true
   type:
     type: text
-    label: 类型
+    label: Type
   createat:
     type: number
-    label: 时间
+    label: Created At
 list_views:
   all:
-    label: 全部
+    label: All
     columns:
       - message
       - type
