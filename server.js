@@ -6,12 +6,12 @@ server.Fiber(function () {
         server.loadServerBundles();
         try {
             var steedosSchema = objectql.getSteedosSchema()
-            steedosSchema.addDataSource('mattermost', {
-                driver: "postgres",
-                url: "postgresql://mmuser:mmuser_password@192.168.0.21:5432/mattermost",
-                objectFiles: [path.resolve(__dirname, "./src")],
-                appFiles: [path.resolve(__dirname, "./src")]
-            });
+            // steedosSchema.addDataSource('mattermost', {
+            //     driver: "postgres",
+            //     url: "postgresql://mmuser:mmuser_password@192.168.0.21:5432/mattermost",
+            //     objectFiles: [path.resolve(__dirname, "./src")],
+            //     appFiles: [path.resolve(__dirname, "./src")]
+            // });
             steedosSchema.getDataSource('mattermost').init();
         } catch (error) {
             console.log(error)
