@@ -4,7 +4,8 @@ env:
 datasources:
   default:
     connection: 
-      url: mongodb://127.0.0.1/steedos
+      host: 127.0.0.1
+      database: steedos
   mattermost:
     connection: 
       driver: postgres
